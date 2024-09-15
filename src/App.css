@@ -17,6 +17,7 @@ body{
 :root{
   --custom: #1C2025;
   --cyan: #10F0FC;
+  --secondary: #302c34;
 }
 
 @keyframes right {

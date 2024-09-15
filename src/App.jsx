@@ -1,5 +1,7 @@
 import './App.css'
+import About from './pages/About'
 import Home from './pages/Home'
+import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <>
       <Home />
       <Skills />
+      <About />
+      <Projects />
     </>
   )
 }
