@@ -71,7 +71,6 @@ const Skills = () => {
                                 {backend.map((tools, index) => (
                                     <Button key={index} label={tools} />
                                 ))}
-
                             </div>
                         </div>
                     </div>
