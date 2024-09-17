@@ -29,13 +29,13 @@ const Projects = () => {
         {
             src: Sellers,
             name: 'Seller\'s Portal',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla risus, hendrerit ut sodales at, fringilla in ex.',
+            description: 'Seller\'s Portal, where brokers can reserve units or properties online',
             link: ''
         },
         {
             src: Warehousing,
-            name: 'Warehouse System',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla risus, hendrerit ut sodales at, fringilla in ex.',
+            name: 'Warehouse Management System',
+            description: 'Warehouse Management System, enabling users to securely reserve storage space or inventory slots online in real-time',
             link: 'http://warehouse.lovestoblog.com/'
         },
         {
@@ -100,7 +100,7 @@ const Projects = () => {
                             >
                                 {projects.map((project, index) => (
                                     <SwiperSlide key={index} className='hover:scale-90 transition-transform duration-200'>
-                                        <div className="card bg-base-100 w-[22rem] shadow-xl">
+                                        <div className="card bg-base-100 w-[22rem] shadow-xl cursor-pointer">
                                             <figure className="h-[12.5rem] md:h-[11rem] lg:h-[11rem] xl:h-52">
                                                 <img
                                                     style={{ objectFit: 'cover', width: '100%', height: '100%' }}

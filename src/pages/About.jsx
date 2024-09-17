@@ -1,16 +1,17 @@
-import ResponsiveMockupCode from "../components/mockup/ResponsiveMockUpCode"
+import ResponsiveMockupCode from "../components/mockup/ResponsiveMockUpCode";
+import AvatarCanvas from '../components/AvatarCanvas'
 
 const About = () => {
     return (
         <>
-            <div className="md:m-10 m-5 my-36">
-                <div className="flex justify-center items-end flex-col lg:flex-row gap-3 h-screen">
-                    <p className="w-[800px]">Image Here</p>
+            <div className="m-10 my-36">
+                <div className="flex justify-center gap-10 items-end w-full">
+                    <AvatarCanvas />
                     <ResponsiveMockupCode />
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default About
+export default About;
