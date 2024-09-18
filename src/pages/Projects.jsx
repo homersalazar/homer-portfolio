@@ -11,6 +11,7 @@ import '../assets/style.css'
 
 import { Pagination } from 'swiper/modules';
 import Link from '../components/button/Link';
+import ArrowRight from '../components/icon/ArrowRight';
 
 const Projects = () => {
     const projects = [
@@ -34,7 +35,7 @@ const Projects = () => {
         },
         {
             src: Warehousing,
-            name: 'Warehouse Management System',
+            name: 'Warehouse System',
             description: 'Warehouse Management System, enabling users to securely reserve storage space or inventory slots online in real-time',
             link: 'http://warehouse.lovestoblog.com/'
         },
@@ -53,18 +54,7 @@ const Projects = () => {
                     <div className="md:m-10 m-5 card bg-base-200">
                         <div className="flex flex-row md:m-10 m-5">
                             <div className='flex flex-row gap-3'>             
-                                <svg 
-                                    className='mt-1'
-                                    xmlns="http://www.w3.org/2000/svg"                   
-                                    height="24" 
-                                    width="30"  
-                                    viewBox="0 0 256 512"
-                                >
-                                    <path
-                                        fill='#10F0FC'
-                                        d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"                                
-                                    />
-                                </svg>  
+                                <ArrowRight />
                                 <h1 className='font-bold text-3xl '>
                                     Featured Creations
                                 </h1>
@@ -101,14 +91,14 @@ const Projects = () => {
                                 {projects.map((project, index) => (
                                     <SwiperSlide key={index} className='hover:scale-90 transition-transform duration-200'>
                                         <div className="card bg-base-100 w-[22rem] shadow-xl cursor-pointer">
-                                            <figure className="h-[12.5rem] md:h-[11rem] lg:h-[11rem] xl:h-52">
+                                            <figure className="h-52">
                                                 <img
                                                     style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                                                     src={project.src}
                                                     alt={project.name}
                                                 />
                                             </figure>
-                                            <div className="card-body p-4 text-sm sm:text-base h-[10.6rem] md:h-[13.5rem] lg:h-52 xl:h-[12rem]">
+                                            <div className="card-body p-4 text-sm sm:text-base h-64">
                                                 <h2 className="card-title">{project.name}</h2>
                                                 <p>{project.description}</p>
                                                 <div className="card-actions justify-end">

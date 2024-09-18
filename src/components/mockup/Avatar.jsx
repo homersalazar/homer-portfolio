@@ -21,7 +21,7 @@ const Avatar = () => {
             <primitive 
                 object={avatar.scene}
                 scale={2}
-                position-y={-3.3}
+                position-y={-1.6}
                 rotation-y={6}
                 position-x={[0]}
             />

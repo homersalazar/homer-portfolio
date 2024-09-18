@@ -22,7 +22,7 @@ const ResponsiveMockupCode = () => {
 
             {/* Mobile Version */}
             <div className="min-h-auto">
-                <div className="mockup-code w-full max-w-full  text-sm sm:hidden">
+                <div className="mockup-code w-full max-w-full text-sm sm:hidden">
                     <pre data-prefix="1"><code><span className="text-[var(--cyan)]">&#60;p&#62;</span></code></pre>
                     <pre data-prefix="2"><code><span className="text-2xl text-[var(--cyan)]">Hello!</span></code></pre>
                     <pre data-prefix="3"><code></code></pre>

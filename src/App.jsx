@@ -1,5 +1,6 @@
 import './App.css'
 import About from './pages/About'
+import Contact from './pages/Contact'
 import Home from './pages/Home'
 import Personal from './pages/Personal'
 import Projects from './pages/Projects'
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Projects />
       <Personal />
+      <Contact />
     </>
   )
 }
