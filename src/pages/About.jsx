@@ -1,12 +1,12 @@
+import ReadyPlayerMeAvatar from "../components/mockup/ReadyPlayerMeAvatar";
 import ResponsiveMockupCode from "../components/mockup/ResponsiveMockUpCode";
-import AvatarCanvas from '../components/AvatarCanvas'
 
 const About = () => {
     return (
         <>
             <div className="m-10 my-36">
                 <div className="flex justify-center gap-10 items-center w-full">
-                    <AvatarCanvas />
+                    <ReadyPlayerMeAvatar/>
                     <ResponsiveMockupCode />
                 </div>
             </div>

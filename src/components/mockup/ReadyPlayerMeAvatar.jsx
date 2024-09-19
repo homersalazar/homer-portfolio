@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 const ReadyPlayerMeAvatar = () => {
-    const modelViewerRef = useRef(null);
     const avatarUrl = 'https://models.readyplayer.me/66e13abc091a54ee8b72762b.glb';
 
     useEffect(() => {
@@ -15,13 +14,10 @@ const ReadyPlayerMeAvatar = () => {
     }, []);
 
     return (
-        <div className="avatar-container w-[900px] h-[500px]">
+        <div className="avatar-container w-[900px] h-[500px] hidden sm:block">
             <model-viewer
-                ref={modelViewerRef}
                 src={avatarUrl}
                 alt="My Avatar"
-                // auto-rotate
-                // camera-control
                 shadow-intensity="1"
                 exposure="1"
                 interaction-prompt="auto"
