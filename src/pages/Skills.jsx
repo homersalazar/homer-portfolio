@@ -30,7 +30,7 @@ const Skills = () => {
             <div className='flex justify-center h-screen'>
                 <div className='w-full'>
                     <div className='md:m-20 m-5'>
-                        <div className='flex flex-row gap-3'>             
+                        <div className='flex flex-row gap-3' data-aos="fade-right">             
                             <ArrowRight />
                             <h1 className='font-bold text-3xl '>
                                 My Expertise
@@ -41,10 +41,15 @@ const Skills = () => {
                         <div>
                             <h1 
                                 className='font-semibold text-2xl tracking-wide pb-3 text-center'
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
                             >
                                 Frontend
                             </h1>
-                            <div className='flex gap-3 flex-wrap justify-center px-5 sm:px-28 md:px-28'>
+                            <div className='flex gap-3 flex-wrap justify-center px-5 sm:px-28 md:px-28'
+                                data-aos="fade-up"
+                                data-aos-duration="3000"
+                            >
                                 {frontend.map((tools, index) => (
                                     <Button key={index} label={tools} />
                                 ))}
@@ -54,10 +59,16 @@ const Skills = () => {
                         <div>
                             <h1 
                                 className='font-semibold text-2xl tracking-wide pb-3 text-center'
+                                data-aos="fade-up"
+                                data-aos-duration="2800"
                             >
                                 Backend
                             </h1>
-                            <div className='flex gap-3 flex-wrap justify-center px-5 sm:px-28 md:px-28'>
+                            <div 
+                                className='flex gap-3 flex-wrap justify-center px-5 sm:px-28 md:px-28'
+                                data-aos="fade-up"
+                                data-aos-duration="2800"
+                            >
                                 {backend.map((tools, index) => (
                                     <Button key={index} label={tools} />
                                 ))}

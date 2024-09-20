@@ -1,6 +1,7 @@
 import React from 'react';
 import SocialMedia from '../components/social/SocialMedia';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
     const circleStyles = {
@@ -62,22 +63,35 @@ const Home = () => {
             </div>
             <div className='relative flex flex-col w-full h-full' style={background}>
                 <div className='flex flex-row justify-end w-full'>
-                    <div className='flex flex-col sm:flex-row justify-end pt-5 sm:pt-5 md:pt-12 px-5 sm:px-5 md:px-10 z-10 gap-4'>
+                    <div className='flex flex-col sm:flex-row justify-end pt-5 sm:pt-5 md:pt-12 px-5 sm:px-5 md:px-10 z-10 gap-4' data-aos="fade-left">
                         <SocialMedia />
                     </div>
                 </div>
 
                 <div className='absolute inset-0 flex flex-col justify-center items-center w-full text-white'>
-                    <h1 className='text-4xl sm:text-6xl md:text-6xl text-center px-4 font-bold tracking-wide'>
+                    <h1 
+                        className='text-4xl sm:text-6xl md:text-6xl text-center px-4 font-bold tracking-wide' 
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
                         Hi, I'm Homer!
                     </h1>
-                    <h1 className='text-4xl sm:text-6xl md:text-6xl text-center px-4 font-bold tracking-wide py-2'>
+                    <h1 
+                        className='text-4xl sm:text-6xl md:text-6xl text-center px-4 font-bold tracking-wide py-2' 
+                        data-aos="fade-up"
+                        data-aos-duration="2800"
+                    >
                         Everything is a <span className='text-[var(--cyan)]'>learning experience.</span>
                     </h1>
-                    <p className='py-4 tracking-wide leading-8 text-xl font-normal px-4 text-center'>I'm a Web Developer based in the Philippines.</p>
+                    <p 
+                        className='py-4 tracking-wide leading-8 text-xl font-normal px-4 text-center' 
+                        data-aos="fade-up"                         
+                        data-aos-duration="2600"
+                    >
+                        I'm a Web Developer based in the Philippines.
+                    </p>
                 </div>
             </div>
-
         </div>
     );
 };
