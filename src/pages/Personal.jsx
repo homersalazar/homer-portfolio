@@ -35,7 +35,7 @@ const Personal = () => {
     ]
     return (
         <>
-            <div className='flex justify-center mt-28'>
+            <div className='flex justify-center my-36 h-screen'>
                 <div className="h-screen w-full">
                     <div className="md:m-10 m-5 card bg-base-200">
                         <div className="flex flex-row md:m-10 m-5">
@@ -59,7 +59,7 @@ const Personal = () => {
 
                                 <div className="flex flex-col gap-8">
                                     {education.map((educ, index) => (
-                                        <div key={index} className="flex flex-col md:flex-row md:justify-between md:gap-2 px-5">
+                                        <div key={index} className="flex flex-col lg:flex-row md:justify-between md:gap-2 px-5">
                                             <div>
                                                 <h1 className="text-lg md:text-xl font-semibold">{educ.school}</h1>
                                                 <p>{educ.level}</p>
@@ -80,7 +80,7 @@ const Personal = () => {
                                 <div className="divider"></div>
                                 <div className="flex flex-col gap-8">
                                     {works.map((work, index) => (
-                                        <div key={index} className="flex flex-col md:flex-row md:justify-between md:gap-2 px-5">
+                                        <div key={index} className="flex flex-col lg:flex-row md:justify-between md:gap-2 px-5">
                                             <div>
                                                 <h1 className="text-lg md:text-xl font-semibold">{work.name}</h1>
                                                 <p>{work.position}</p>

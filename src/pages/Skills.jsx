@@ -27,7 +27,7 @@ const Skills = () => {
 
     return (
         <>
-            <div className='flex justify-center h-screen mt-28'>
+            <div className='flex justify-center h-screen'>
                 <div className='w-full'>
                     <div className='md:m-20 m-5'>
                         <div className='flex flex-row gap-3'>             

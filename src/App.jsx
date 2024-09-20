@@ -1,6 +1,7 @@
 import './App.css'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Footer from './pages/Footer'
 import Home from './pages/Home'
 import Personal from './pages/Personal'
 import Projects from './pages/Projects'
@@ -16,6 +17,7 @@ function App() {
       <Projects />
       <Personal />
       <Contact />
+      <Footer />
     </>
   )
 }

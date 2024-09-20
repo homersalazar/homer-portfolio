@@ -49,7 +49,7 @@ const Projects = () => {
 
     return (
         <>
-            <div className='flex justify-center mt-28'>
+            <div className='flex justify-center items-center h-screen w-full my-28'>
                 <div className="h-screen w-full">
                     <div className="md:m-10 m-5 card bg-base-200">
                         <div className="flex flex-row md:m-10 m-5">

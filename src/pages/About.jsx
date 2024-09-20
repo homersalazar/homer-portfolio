@@ -4,8 +4,8 @@ import ResponsiveMockupCode from "../components/mockup/ResponsiveMockUpCode";
 const About = () => {
     return (
         <>
-            <div className="m-10 my-36">
-                <div className="flex justify-center gap-10 items-center w-full">
+            <div className="flex justify-center h-screen w-full">
+                <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row justify-center gap-3 items-center w-full">
                     <ReadyPlayerMeAvatar/>
                     <ResponsiveMockupCode />
                 </div>
