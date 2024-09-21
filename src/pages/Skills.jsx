@@ -60,14 +60,14 @@ const Skills = () => {
                             <h1 
                                 className='font-semibold text-2xl tracking-wide pb-3 text-center'
                                 data-aos="fade-up"
-                                data-aos-duration="2800"
+                                data-aos-duration="3000"
                             >
                                 Backend
                             </h1>
                             <div 
                                 className='flex gap-3 flex-wrap justify-center px-5 sm:px-28 md:px-28'
                                 data-aos="fade-up"
-                                data-aos-duration="2800"
+                                data-aos-duration="3000"
                             >
                                 {backend.map((tools, index) => (
                                     <Button key={index} label={tools} />

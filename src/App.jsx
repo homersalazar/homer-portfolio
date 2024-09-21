@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import AOS from "aos";
 import About from './pages/About'
 import Contact from './pages/Contact'
@@ -11,37 +11,37 @@ import Skills from './pages/Skills'
 
 function App() {
   AOS.init({});
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   const loadingTimer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 5000);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const loadingTimer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
 
-  //   // Clean up the timer to avoid memory leaks
-  //   return () => clearTimeout(loadingTimer);
-  // }, []);
+    // Clean up the timer to avoid memory leaks
+    return () => clearTimeout(loadingTimer);
+  }, []);
 
-  // if (loading) {
-  //   return (
-  //     <div className="grid place-items-center">
-  //       <div className="first-letter:loading-ui">
-  //         <div className="ui-abstergo ">
-  //           <div className="abstergo-loader">
-  //             <div></div>
-  //             <div></div>
-  //             <div></div>
-  //           </div>
-  //           <div className="ui-text">
-  //             Homer Salazar
-  //             <div className="ui-dot"></div>
-  //             <div className="ui-dot"></div>
-  //             <div className="ui-dot"></div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  if (loading) {
+    return (
+      <div className="grid place-items-center">
+        <div className="first-letter:loading-ui">
+          <div className="ui-abstergo ">
+            <div className="abstergo-loader">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="ui-text">
+              Homer Salazar
+              <div className="ui-dot"></div>
+              <div className="ui-dot"></div>
+              <div className="ui-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>

@@ -17,7 +17,7 @@ const ReadyPlayerMeAvatar = () => {
         <div 
             className="avatar-container w-full h-[500px] hidden md:block" 
             data-aos="fade-right"
-            data-aos-duration="2800"
+            // data-aos-duration="3000"
         >
             <model-viewer
                 src={avatarUrl}

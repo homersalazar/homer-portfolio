@@ -53,14 +53,14 @@ const Projects = () => {
                 <div className="h-screen w-full">
                     <div className="md:m-10 m-5 card bg-base-200">
                         <div className="flex flex-row md:m-10 m-5">
-                            <div className='flex flex-row gap-3'>             
+                            <div className='flex flex-row gap-3' data-aos="fade-right">             
                                 <ArrowRight />
                                 <h1 className='font-bold text-3xl '>
                                     Featured Creations
                                 </h1>
                             </div>
                         </div>
-                        <div className="flex flex-row items-center justify-center gap-10 md:m-10 m-5">
+                        <div className="flex flex-row items-center justify-center gap-10 md:m-10 m-5" data-aos="fade-up">
                             <Swiper
                                 slidesPerView={1}
                                 spaceBetween={20}

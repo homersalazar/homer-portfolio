@@ -39,14 +39,14 @@ const Personal = () => {
                 <div className="h-screen w-full">
                     <div className="md:m-10 m-5 card bg-base-200">
                         <div className="flex flex-row md:m-10 m-5">
-                            <div className='flex flex-row gap-3'>             
+                            <div className='flex flex-row gap-3' data-aos="fade-right">             
                                 <ArrowRight />
                                 <h1 className='font-bold text-3xl '>
                                     Education & Work Experience
                                 </h1>
                             </div>
                         </div>
-                        <div className="grid sm:grid-cols-2 grid-row-1 gap-10 md:m-10 m-5">
+                        <div className="grid sm:grid-cols-2 grid-row-1 gap-10 md:m-10 m-5" data-aos="fade-up">
                             <div className="flex flex-col">
                                 <div className='flex flex-row gap-3'>
                                     <hr />     

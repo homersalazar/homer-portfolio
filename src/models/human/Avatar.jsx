@@ -5,15 +5,13 @@ const Avatar = ({ animationName = 'idle', ...props }) => {
     const group = useRef();
     const { nodes, materials } = useGLTF('/66e13abc091a54ee8b72762b.glb');
     
-    const { animations: idleAnimation } = useFBX('/src/models/animations/idle.fbx');
-    const { animations: callingAnimation } = useFBX('/src/models/animations/calling.fbx');
-    const { animations: wavingAnimation } = useFBX('/src/models/animations/waving.fbx');
+    const { animations: idleAnimation } = useFBX('/idle.fbx');
+    const { animations: callingAnimation } = useFBX('/calling.fbx');
 
     idleAnimation[0].name = 'idle';
     callingAnimation[0].name = 'calling';
-    wavingAnimation[0].name = 'waving';
 
-    const { actions } = useAnimations([idleAnimation[0], callingAnimation[0], wavingAnimation[0]], group);
+    const { actions } = useAnimations([idleAnimation[0], callingAnimation[0]], group);
 
     useEffect(() => {
         if (actions[animationName]) {
